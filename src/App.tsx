@@ -1,16 +1,10 @@
 import React from 'react';
+import { Header } from "./components"
 
-interface Props {
-  name:
-  string
-}
-
-export const App = ({ name }: Props) => {
+export default function App() {
   return (
-    <>
-      <h1 className="text-6xl text-black">
-        Hello {name}
-      </h1>
-    </>
+    <div className="">
+      <Header />
+    </div>
   );
 }
