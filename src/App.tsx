@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 interface Props {
   name:
@@ -8,7 +8,7 @@ interface Props {
 export const App = ({ name }: Props) => {
   return (
     <>
-      <h1 className="text-4xl text-white bg-black">
+      <h1 className="text-6xl text-black">
         Hello {name}
       </h1>
     </>

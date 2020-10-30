@@ -1,8 +1,10 @@
-import * as React from 'react';
-import * as ReactDOM from "react-dom";
-
+import React from 'react';
+import ReactDOM from "react-dom";
 import { App } from './App';
-import "./styles.css";
+import "./index.css";
 
-var mountNode = document.getElementById("app");
-ReactDOM.render(<App name="Omar" />, mountNode);
+ReactDOM.render(
+  <React.StrictMode>
+    <App name="Omar" />
+  </React.StrictMode>
+  , document.getElementById("root"));
