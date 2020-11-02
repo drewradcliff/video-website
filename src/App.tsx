@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Header, Login } from "./components"
 
 export default function App() {
+  const [modal, setModal] = useState(false);
+  const modalLogin = () => setModal(true);
+  const modalExit = () => setModal(false);
+
   return (
     <>
-      <Login />
-      <Header />
-      <p className="text-6xl">test test test test test</p>
+      {modal && <Login modalExit={modalExit} />}
+      <Header modalLogin={modalLogin} />
     </>
   );
 }
