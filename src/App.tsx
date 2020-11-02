@@ -1,10 +1,12 @@
 import React from 'react';
-import { Header } from "./components"
+import { Header, Login } from "./components"
 
 export default function App() {
   return (
-    <div className="">
+    <>
+      <Login />
       <Header />
-    </div>
+      <p className="text-6xl">test test test test test</p>
+    </>
   );
 }
