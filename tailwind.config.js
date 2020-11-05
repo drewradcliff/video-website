@@ -5,6 +5,9 @@ module.exports = {
   },
   purge: [],
   theme: {
+    inset: {
+      '1/2': '50%',
+    },
     extend: {},
   },
   variants: {},

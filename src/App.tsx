@@ -1,10 +1,15 @@
-import React from 'react';
-import { Header } from "./components"
+import React, { useState } from 'react';
+import { Header, Login } from "./components"
 
 export default function App() {
+  const [modal, setModal] = useState(false);
+  const modalLogin = () => setModal(true);
+  const modalExit = () => setModal(false);
+
   return (
-    <div className="">
-      <Header />
-    </div>
+    <>
+      {modal && <Login modalExit={modalExit} />}
+      <Header modalLogin={modalLogin} />
+    </>
   );
 }
