@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons"
 
 type LoginProps = {
-  modalExit: () => void
+  setModal: (modal: boolean) => void
 }
 
-export default function Login({ modalExit }: LoginProps) {
+export default function Login({ setModal }: LoginProps) {
   return (
     <div className="fixed z-10 py-32 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-75">
       <div className="bg-white m-auto p-4 pb-24 max-w-3xl rounded-lg">
         <div className="p-4 text-right">
-          <FontAwesomeIcon onClick={modalExit} icon={faTimesCircle} color="gray" size="2x" className="cursor-pointer" />
+          <FontAwesomeIcon onClick={() => setModal(false)} icon={faTimesCircle} color="gray" size="2x" className="cursor-pointer" />
         </div>
         <h1 className="text-center text-3xl font-bold">Log in to VidWeb</h1>
         <p className="text-center text-gray-500 text-sm">Manage account and more</p>
