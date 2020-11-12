@@ -8,6 +8,9 @@ module.exports = {
     inset: {
       '1/2': '50%',
     },
+    height: {
+      lg: '450px',
+    },
     extend: {},
   },
   variants: {},
