@@ -5,14 +5,12 @@ module.exports = {
   },
   purge: [],
   theme: {
-    inset: {
-      '1/2': '50%',
+    extend: {
+      height: {
+        lg: "450px",
+      },
     },
-    height: {
-      lg: '450px',
-    },
-    extend: {},
   },
   variants: {},
   plugins: [],
-}
+};

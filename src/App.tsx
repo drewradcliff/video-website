@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Header, Login, Banner } from "./components"
+import { Header, Login, Banner, Footer } from "./components"
 
 export default function App() {
   const [modal, setModal] = useState(false);
@@ -9,6 +9,7 @@ export default function App() {
       {modal && <Login setModal={setModal} />}
       <Header setModal={setModal} />
       <Banner />
+      <Footer />
     </>
   );
 }

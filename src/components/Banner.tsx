@@ -4,7 +4,7 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 export default function Banner() {
   return (
-    <div className="text-center py-4 bg-teal-500 lg:bg-white text-white lg:text-black">
+    <div className="text-center bg-teal-500 lg:bg-white text-white lg:text-black">
       <h1 className="text-4xl pt-32 lg:pt-4 lg:text-6xl font-bold">Make Your Day</h1>
       <p className="text-lg lg:text-xl">Real People. Real Videos.</p>
       <div className="w-56 my-8 mx-auto bg-red-500 text-lg text-white py-2 px-12 rounded-sm hover:bg-red-400 cursor-pointer">
